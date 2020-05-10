@@ -37,12 +37,19 @@ def dummy(param):
 	list = get_similar(param,5).index
 	return list[1],list[2],list[3],list[4],list[5]
 # Collborative filtering end
+
+
+
+#Content Based Recommendation
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
 
 data = pd.read_csv('dataset\movie_dataset.csv')
 
 columns = ['keywords','cast','genres','director']
+
+def combine_features(row):
+ return row['keywords']+' '+row['cast']+' '+row['genres']+' '+row['director']
 
 for feature in columns:
     data[feature] = data[feature].fillna('') #filling all NaNs with blank string
@@ -59,12 +66,24 @@ def get_index_from_title(title):
     return data[data.title == title]['index'].values[0]
 
 
-# movie_user_likes = 'Avatar'
-# movie_index = get_index_from_title(movie_user_likes)
-# similar_movies = list(enumerate(cosine_sim[movie_index]))
 
+@eel.expose
 def content_based(mov):
-    movie_index = get_index_from_title(mov)
-    similar_movies = list(enumerate(cosine_sim[movie_index])
 
-eel.start('index.html', size=(1000, 600))
+    film = []
+    movie_index = get_index_from_title(mov)
+    similar_movies = list(enumerate(cosine_sim[movie_index]))
+    sorted_similar_movies = sorted(similar_movies,key=lambda x:x[1],reverse=True)[1:]
+    i=0
+    for element in sorted_similar_movies:
+        film.append(get_title_from_index(element[0]))
+        i=i+1
+        if i>5:
+            break
+    return film
+
+
+
+
+
+eel.start('content_based.html', size=(1000, 600))

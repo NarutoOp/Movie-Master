@@ -10,6 +10,19 @@ async function final () {
   		
 }
 
+
+async function content () {
+		var dat = document.getElementById("dat").value
+  		let movi = await eel.content_based(dat)();
+  		// document.getElementById("qr").src = getanswer(movie[1]);
+  		getanswer(movi[0],"qr");
+  		getanswer(movi[1],"p");
+  		getanswer(movi[2],"q");
+  		getanswer(movi[3],"r");
+  		getanswer(movi[4],"s");
+  		
+}
+
 var data;
 function getanswer(q,pos){
 	$.get("https://www.omdbapi.com/?s="+q+"&apikey=ba1f4581", function(rawdata){
