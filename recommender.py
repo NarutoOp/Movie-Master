@@ -30,35 +30,14 @@ def get_similar(movie_name,rating):
     #print(type(similar_ratings))
     return similar_ratings
 
-# romantic_lover = [("(500) Days of Summer (2009)",5)]
-# similar_movies = pd.DataFrame()
-# for movie,rating in romantic_lover:
-#     similar_movies = similar_movies.append(get_similar(movie,rating),ignore_index = True)
 
-
-# print(similar_movies.sum().sort_values(ascending=False))
-# @eel.expose
-# def give_movies():
-# 	all_movie = movies['title'].values
-# 	# print(all_movie)
-# 	return all_movie
 
 @eel.expose
 def dummy(dummy_param):
 	list = get_similar(dummy_param,5).index
-	split_list = list[1].split()
-	split_list.pop()
-	# print("I got a answer: ",split_list)
-	return split_list
+	return list[1],list[2],list[3],list[4],list[5]
 
-# @eel.expose
-# def generate_qr(data):
-#     img = pyqrcode.create(data)
-#     buffers = io.BytesIO()
-#     img.png(buffers, scale=8)
-#     encoded = b64encode(buffers.getvalue()).decode("ascii")
-#     print("QR code generation successful.")
-#     return "data:image/png;base64, " + encoded
+
 
 
 
