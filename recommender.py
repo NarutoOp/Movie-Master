@@ -86,4 +86,4 @@ def content_based(mov):
 
 
 
-eel.start('content_based.html', size=(1000, 600))
+eel.start('index.html', size=(1000, 600))
