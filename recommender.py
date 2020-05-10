@@ -4,6 +4,7 @@ import eel
 
 eel.init('web')
 
+#Collaborative Filtering
 ratings = pd.read_csv('dataset/ratings.csv')
 movies = pd.read_csv('dataset/movies.csv')
 all_movie = movies['title'].values
@@ -30,13 +31,11 @@ def get_similar(movie_name,rating):
     #print(type(similar_ratings))
     return similar_ratings
 
-
-
 @eel.expose
-def dummy(dummy_param):
-	list = get_similar(dummy_param,5).index
+def dummy(param):
+	list = get_similar(param,5).index
 	return list[1],list[2],list[3],list[4],list[5]
-
+# Collborative filtering end
 
 
 
