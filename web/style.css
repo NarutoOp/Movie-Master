@@ -56,11 +56,17 @@ p {
 }
 
 .welcome-thumb {
-    width: 42%;
+     /*width: 42%;
     position: absolute;
     bottom: 50px;
     right: -10px;
-    z-index: 9;
+    z-index: 9;*/
+    width: 42%;
+    position: sticky;
+    bottom: 50px;
+    left: 50px;
+    right: -10px;
+    z-index: 9
 }
 
 

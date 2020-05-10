@@ -28,6 +28,10 @@ function getanswer(q){
 		var posterurl =data.Search[0].Poster;
 		// document.getElementById('qr').innerHTML="<br> <img src= '"+posterurl+"'>";
 		document.getElementById("qr").src = posterurl;
+		document.getElementById("p").src = posterurl;
+		document.getElementById("q").src = posterurl;
+		document.getElementById("r").src = posterurl;
+		document.getElementById("s").src = posterurl;
 });
 }
 
