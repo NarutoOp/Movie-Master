@@ -9,11 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Movie Master</title>
     <link href="style.css" rel="stylesheet">
-    <!-- <style>
-        img {
-          border: 5px solid #555;
-        }
-    </style> -->
+    <style>
+    body  {
+      background-image: url(img/bg-img/mono.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
     <script type="text/javascript" src="/eel.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -24,12 +27,11 @@
 <body>
 
     <section class="wellcome_area clearfix" id="home">
-        <button class="btn btn-info"><a style="color:white" href="index.html">< Back</a></button>
-        <div class="container h-100 ml-5 p-5">
+        <div class="container ml-5 p-5">
             <div class="row p-3">
                 <div class="col-12 col-md">
                     <div class="wellcome-heading">
-                        <h2>Movie Master</h2>
+                        <h2>Collaborative</h2>
                         <h3>MM</h3>
                         <p>Get recommendation based on your favourite.</p>
                     </div>
@@ -37,8 +39,8 @@
                         <form class="form-inline" autocomplete="off">
                             <div class="autocomplete">
                             <input type="text" id="data" class="form-control email" placeholder="Favourite Movie">
-                            <!-- <input type="button" class="submit" value="Recommend" onclick="getanswer(recommend())" > -->
                             <input type="button" class="submit" value="Recommend" onclick="final()" >
+                            <button class="btn btn-info ml-3"><a style="color:white" href="index.html">< Back</a></button>
                         </div>
                         </form>
                     </div>

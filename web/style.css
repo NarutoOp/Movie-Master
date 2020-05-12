@@ -47,8 +47,8 @@ p {
 }
 
 .wellcome_area {
-    background-image: url(img/bg-img/mono.png);
-    height: 565px;
+    /*background-image: url(img/bg-img/mono.png);*/
+    height: 550px;
     position: relative;
     z-index: 1;
     background-position: bottom center;
@@ -126,6 +126,7 @@ p {
     text-align: center;
     border-radius: 24px 24px 24px 0px;
     margin-left: 10px;
+    margin-left: 5px;
 }
 
 .get-start-area .submit:hover {

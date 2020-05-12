@@ -3,7 +3,14 @@ from scipy import sparse
 import numpy as np
 import eel
 
+def on_close(page, sockets):
+    print(page, 'closed')
+    print('Still have sockets open to', sockets)
+
+
 eel.init('web')
+
+
 
 #Collaborative Filtering
 ratings = pd.read_csv('dataset/ratings.csv')
@@ -86,4 +93,5 @@ def content_based(mov):
 
 
 
-eel.start('index.html', size=(1000, 600))
+# eel.start('index.html', size=(1000, 590))
+eel.start('index.html', size=(1000, 590), callback=on_close)
