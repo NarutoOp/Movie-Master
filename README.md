@@ -1,5 +1,5 @@
 # Movie-Master
- It is a Machine Learning project based on collaborative filtering
+ It is a Machine Learning project based on collaborative filtering and Second Algorithm is Content Based.
 
 [![ForTheBadge winter-is-coming](http://ForTheBadge.com/images/badges/winter-is-coming.svg)](https://github.com/NarutoOp)
 
