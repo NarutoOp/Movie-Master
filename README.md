@@ -49,6 +49,12 @@
 - Recommend movie based on another user who have liked that movie .
 
 #### Results
+
 ![image](https://user-images.githubusercontent.com/55342994/82590070-aef90880-9bba-11ea-83cb-e77c532ba711.png)
+
+---
+![image](https://user-images.githubusercontent.com/55342994/82590271-0c8d5500-9bbb-11ea-962b-770c8e38e4c9.png)
+
+---
 
 ---
