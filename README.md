@@ -1,5 +1,6 @@
 # Movie-Master
  It is a Machine Learning project based on collaborative filtering and Second Algorithm is Content Based.
+This is desktop Application made for recommending movie to users
 
 [![ForTheBadge winter-is-coming](http://ForTheBadge.com/images/badges/winter-is-coming.svg)](https://github.com/NarutoOp)
 
@@ -59,4 +60,9 @@
 ![image](https://user-images.githubusercontent.com/55342994/82590499-6c83fb80-9bbb-11ea-84df-8963533539ef.png)
 
 ---
+![image](https://user-images.githubusercontent.com/55342994/82590665-aead3d00-9bbb-11ea-8cc2-617651ffbf98.png)
+
+---
+![image](https://user-images.githubusercontent.com/55342994/82590723-d0a6bf80-9bbb-11ea-9f3d-a936c7ff5b48.png)
+
 ---
