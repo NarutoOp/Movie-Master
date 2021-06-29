@@ -1,10 +1,10 @@
-# Movie-Master
+# Movie-Master ⚡️
  It is a Machine Learning project based on collaborative filtering and Second Algorithm is Content Based.
 This is desktop Application made for recommending movie to users
 
 [![ForTheBadge winter-is-coming](http://ForTheBadge.com/images/badges/winter-is-coming.svg)](https://github.com/NarutoOp)
 
-[![HitCount](http://hits.dwyl.com/NarutoOp/Movie-Master.svg)](http://hits.dwyl.com/NarutoOp/Movie-Master) [![Generic badge](https://img.shields.io/badge/Arpit-Gupta-1abc9c.svg)](https://github.com/NarutoOp)
+[![Visits Badge](https://badges.pufler.dev/visits/NarutoOp/Movie-Master)](https://badges.pufler.dev/visits/NarutoOp/Movie-Master) [![Generic badge](https://img.shields.io/badge/Arpit-Gupta-1abc9c.svg)](https://github.com/NarutoOp)
 
 ## The Technologies used are :
 
